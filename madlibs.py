@@ -8,7 +8,7 @@ def Madlibs (debug = False):
     if debug: print ("Welcome to Debug")
     
     print (TitleScreen(debug))
-    input ("Press Enter to Contiune")
+    input ("Press Enter to Continue")
     
     done = False
     
@@ -21,7 +21,7 @@ def Madlibs (debug = False):
         elif choice == "1":
             print (Story1())
             print("\n")
-            input ("Press Enter to Contiune")
+            input ("Press Enter to Continue")
     
     
     
