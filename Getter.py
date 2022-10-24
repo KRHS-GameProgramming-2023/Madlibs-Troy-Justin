@@ -19,7 +19,12 @@ def getMenuOption(debug = False):
             option == "Story"): 
                 option = "1"
                 goodInput = True 
-            
+        elif (option == "2" or 
+            option == "two" or 
+            option == "story 2" or 
+            option == "Story"): 
+                option = "2"
+                goodInput = True 
         else:
             print("Please make a valid choice")
             
@@ -62,6 +67,63 @@ def getSport(promt, debug = False):
             goodInput = False
             print ("Don't use laguage like that")
         elif word.lower() not in sports:
+            goodInput = False
+            print("Sorry, I don't know that one.")
+            
+    return word
+    
+def getNumbertime(promt, debug = False):
+    if debug: print ("getNumbertime Function")
+
+    goodInput = False
+    
+    Time = ["1",
+            "2", 
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            ]
+    
+    while not goodInput:
+        word = input(promt)
+        
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use laguage like that")
+        elif word.lower() not in Time:
+            goodInput = False
+            print("Sorry, I don't know that one.")
+            
+    return word
+    
+def getTimeofday(promt, debug = False):
+    if debug: print ("getTimeofday Function")
+
+    goodInput = False
+    
+    Timeofday = ["morning",
+                 "noon", 
+                 "afternoon",
+                 "midnight",
+                 
+            ]
+    
+    while not goodInput:
+        word = input(promt)
+        
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use laguage like that")
+        elif word.lower() not in Timeofday:
             goodInput = False
             print("Sorry, I don't know that one.")
             
