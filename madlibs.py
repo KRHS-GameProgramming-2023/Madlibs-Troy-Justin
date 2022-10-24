@@ -1,4 +1,3 @@
-#troywashere
 from screens import *
 from Getter import *
 from story1 import *
