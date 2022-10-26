@@ -33,23 +33,134 @@ def getMenuOption(debug = False):
 
 
 
-def getWord(promt, debug = False):
+def getWord(prompt, debug = False):
     if debug: print ("getWord Function")
 
     goodInput = False
     
     
     while not goodInput:
-        word = input(promt)
+        word = input(prompt)
         goodInput = True
         if isSwear(word, debug):
             goodInput = False
             print ("Don't use laguage like that")
             
     return word
+
+def getClass(prompt, debug = False):
+    if debug: print ("getClass Function")
+
+    goodInput = False
     
+    classes = ["english",
+              "math", 
+              "spanish",
+              "history",
+              "science",
+              "gym",
+              "programming"]
     
-def getSport(promt, debug = False):
+    while not goodInput:
+        word = input(prompt)
+        
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use laguage like that")
+        elif word.lower() not in classes:
+            goodInput = False
+            print("Sorry, I don't know that one.")
+            
+    return word
+
+    
+def getCandy(prompt, debug = False):
+    if debug: print ("getCandy Function")
+
+    goodInput = False
+    candy = ["reeses",
+              "snickers", 
+              "twix",
+              "baby ruth",
+              "milky way",
+              "butterfinger",
+              "crunch",
+              "hershey",
+              "almond joy",
+              ]
+    
+    while not goodInput:
+        word = input(prompt)
+        
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use laguage like that")
+        elif word.lower() not in candy:
+            goodInput = False
+            print("Sorry, I don't know that one.")
+            
+    return word
+
+def getFastFood(prompt, debug = False):
+    if debug: print ("getFastFood Function")
+
+    goodInput = False
+    
+    Places = ["mcdonalds",
+              "wendys", 
+              "dairy queen",
+              "canes",
+              "taco bell",
+              "subway",
+              "pizza chef",
+              "dominos",
+              "pizza hut"
+              ]
+    
+    while not goodInput:
+        word = input(prompt)
+        
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use laguage like that")
+        elif word.lower() not in Places:
+            goodInput = False
+            print("Sorry, I don't know that one.")
+            
+    return word
+
+def getColor(prompt, debug = False):
+    if debug: print ("getColor Function")
+
+    goodInput = False
+    
+    colors = ["red",
+              "yellow", 
+              "blue",
+              "green",
+              "purple",
+              "black",
+              "white",
+              "orange",
+              ]
+    
+    while not goodInput:
+        word = input(prompt)
+        
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use laguage like that")
+        elif word.lower() not in colors:
+            goodInput = False
+            print("Sorry, I don't know that one.")
+            
+    return word
+
+def getSport(prompt, debug = False):
     if debug: print ("getSport Function")
 
     goodInput = False
@@ -60,7 +171,7 @@ def getSport(promt, debug = False):
               "football"]
     
     while not goodInput:
-        word = input(promt)
+        word = input(prompt)
         
         goodInput = True
         if isSwear(word, debug):
@@ -72,7 +183,7 @@ def getSport(promt, debug = False):
             
     return word
     
-def getNumbertime(promt, debug = False):
+def getNumbertime(prompt, debug = False):
     if debug: print ("getNumbertime Function")
 
     goodInput = False
@@ -92,7 +203,7 @@ def getNumbertime(promt, debug = False):
             ]
     
     while not goodInput:
-        word = input(promt)
+        word = input(prompt)
         
         goodInput = True
         if isSwear(word, debug):
@@ -104,7 +215,7 @@ def getNumbertime(promt, debug = False):
             
     return word
     
-def getTimeofday(promt, debug = False):
+def getTimeofday(prompt, debug = False):
     if debug: print ("getTimeofday Function")
 
     goodInput = False
@@ -117,7 +228,7 @@ def getTimeofday(promt, debug = False):
             ]
     
     while not goodInput:
-        word = input(promt)
+        word = input(prompt)
         
         goodInput = True
         if isSwear(word, debug):
@@ -129,7 +240,7 @@ def getTimeofday(promt, debug = False):
             
     return word
 
-def getState(promt, debug = False):
+def getState(prompt, debug = False):
     if debug: print ("getState Function")
 
     goodInput = False
@@ -186,7 +297,7 @@ def getState(promt, debug = False):
             "Wyoming"]
     
     while not goodInput:
-        word = input(promt)
+        word = input(prompt)
         
         goodInput = True
         if isSwear(word, debug):
