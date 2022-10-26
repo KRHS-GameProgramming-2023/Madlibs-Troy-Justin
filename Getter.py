@@ -72,23 +72,98 @@ def getSport(promt, debug = False):
             
     return word
     
+def getfamilymember(promt, debug = False):
+    if debug: print ("getfamilymember Function")
+
+    goodInput = False
+    
+    
+    while not goodInput:
+        word = input(promt)
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use laguage like that")
+            
+    return word
+    
+def getnameoffamilymember(promt, debug = False):
+    if debug: print ("getnameoffamilymember Function")
+
+    goodInput = False
+    
+    
+    while not goodInput:
+        word = input(promt)
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use laguage like that")
+            
+    return word
+    
+def getpetspeicesname(promt, debug = False):
+    if debug: print ("getpetspeicesname Function")
+
+    goodInput = False
+    
+    
+    while not goodInput:
+        word = input(promt)
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use laguage like that")
+            
+    return word
+    
+def getObject(promt, debug = False):
+    if debug: print ("getObject Function")
+
+    goodInput = False
+    
+    
+    while not goodInput:
+        word = input(promt)
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use laguage like that")
+            
+    return word
+    
+    
+def getpetname(promt, debug = False):
+    if debug: print ("getpetname Function")
+
+    goodInput = False
+    
+    
+    while not goodInput:
+        word = input(promt)
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use laguage like that")
+            
+    return word
+    
 def getNumbertime(promt, debug = False):
     if debug: print ("getNumbertime Function")
 
     goodInput = False
     
-    Time = ["1",
-            "2", 
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
+    numberTime = ["1",
+                 "2",
+                 "3", 
+                 "4",
+                 "5",
+                 "6",
+                 "7",
+                 "8",
+                 "9",
+                 "10",
+                 "12",
             ]
     
     while not goodInput:
@@ -98,11 +173,12 @@ def getNumbertime(promt, debug = False):
         if isSwear(word, debug):
             goodInput = False
             print ("Don't use laguage like that")
-        elif word.lower() not in Time:
+        elif word.lower() not in numberTime:
             goodInput = False
             print("Sorry, I don't know that one.")
             
     return word
+    
     
 def getTimeofday(promt, debug = False):
     if debug: print ("getTimeofday Function")
@@ -110,10 +186,11 @@ def getTimeofday(promt, debug = False):
     goodInput = False
     
     Timeofday = ["morning",
+                 "day",
                  "noon", 
                  "afternoon",
                  "midnight",
-                 
+                 "night",
             ]
     
     while not goodInput:
