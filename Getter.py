@@ -160,6 +160,10 @@ def getColor(prompt, debug = False):
             
     return word
 
+
+
+
+
 def getSport(prompt, debug = False):
     if debug: print ("getSport Function")
 
@@ -178,6 +182,52 @@ def getSport(prompt, debug = False):
             goodInput = False
             print ("Don't use laguage like that")
         elif word.lower() not in sports:
+            goodInput = False
+            print("Sorry, I don't know that one.")
+            
+    return word
+    
+    
+
+def getnumber(prompt, debug = False):
+    if debug: print ("getnumber Function")
+
+    goodInput = False
+    
+    Numbers = ["1",
+              "2", 
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11",
+              "12",
+              "13",
+              "14",
+              "15",
+              "16",
+              "17",
+              "18",
+              "19",
+              "20",
+              "21",
+              "22",
+              "23",
+              "24",
+              ]
+    
+    while not goodInput:
+        word = input(prompt)
+        
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use laguage like that")
+        elif word.lower() not in Numbers:
             goodInput = False
             print("Sorry, I don't know that one.")
             
