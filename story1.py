@@ -1,4 +1,4 @@
-from Getter import *
+from Getter import*
 
 def Story1(debug = False):
     if debug: print ("Story1 Function")
@@ -25,6 +25,7 @@ def Story1(debug = False):
     out += " on our way to class we stopped at a vending machine and I got my favorite candy bar which is obviously " + Candy1
     out += " after class we all went and got food at " + FastFood1
     out += " on the drive to " + FastFood1
-    out += " we almost hit another car we only saw it because of its bright " + Color1 " color "
+    out += " we almost hit another car we only saw it because of its bright " + Color1 
+    out += " color"
     
     return out

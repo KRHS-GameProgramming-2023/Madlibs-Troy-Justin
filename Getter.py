@@ -16,22 +16,113 @@ def getMenuOption(debug = False):
         elif (option == "1" or 
             option == "one" or 
             option == "story 1" or 
-            option == "Story"): 
+            option == "Story one"): 
                 option = "1"
                 goodInput = True 
         elif (option == "2" or 
             option == "two" or 
             option == "story 2" or 
-            option == "Story"): 
+            option == "Story two"): 
                 option = "2"
+                goodInput = True 
+        elif (option == "3" or 
+            option == "three" or 
+            option == "story 3" or 
+            option == "Story three"): 
+                option = "3"
                 goodInput = True 
         else:
             print("Please make a valid choice")
             
     return option
         
+def getSeason(prompt, debug = False):
+    if debug: print ("getSeason Function")
 
+    goodInput = False
+    
+    seasons = ["summer",
+              "winter", 
+              "fall",
+              "spring"]
+    
+    while not goodInput:
+        word = input(prompt)
+        
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use language like that")
+        elif word.lower() not in seasons:
+            goodInput = False
+            print("Sorry, I don't know that one.")
+            
+    return word
+    
+def getPet(prompt, debug = False):
+    if debug: print ("getPet Function")
 
+    goodInput = False
+    
+    Pets =   ["dog",
+              "cat", 
+              "pig",
+              "chickem",
+              "cow",
+              "alligator",
+              "lizard"]
+    
+    while not goodInput:
+        word = input(prompt)
+        
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use language like that")
+        elif word.lower() not in Pets:
+            goodInput = False
+            print("Sorry, I don't know that one.")
+            
+    return word
+
+def getAge(prompt, debug = False):
+    if debug: print ("getAge Function")
+
+    goodInput = False
+    
+    Age =       ["1",
+                 "2",
+                 "3", 
+                 "4",
+                 "5",
+                 "6",
+                 "7",
+                 "8",
+                 "9",
+                 "10",
+                 "12",
+                 "13",
+                 "14",
+                 "15",
+                 "16",
+                 "17",
+                 "18",
+                 "19",
+                 "20"
+                     ]
+    
+    while not goodInput:
+        word = input(prompt)
+        
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use language like that")
+        elif word.lower() not in Age:
+            goodInput = False
+            print("Sorry, I don't know that one.")
+            
+    return word
 
 def getWord(prompt, debug = False):
     if debug: print ("getWord Function")
@@ -44,7 +135,7 @@ def getWord(prompt, debug = False):
         goodInput = True
         if isSwear(word, debug):
             goodInput = False
-            print ("Don't use laguage like that")
+            print ("Don't use language like that")
             
     return word
 
@@ -67,7 +158,7 @@ def getClass(prompt, debug = False):
         goodInput = True
         if isSwear(word, debug):
             goodInput = False
-            print ("Don't use laguage like that")
+            print ("Don't use language like that")
         elif word.lower() not in classes:
             goodInput = False
             print("Sorry, I don't know that one.")
@@ -96,7 +187,7 @@ def getCandy(prompt, debug = False):
         goodInput = True
         if isSwear(word, debug):
             goodInput = False
-            print ("Don't use laguage like that")
+            print ("Don't use language like that")
         elif word.lower() not in candy:
             goodInput = False
             print("Sorry, I don't know that one.")
@@ -125,7 +216,7 @@ def getFastFood(prompt, debug = False):
         goodInput = True
         if isSwear(word, debug):
             goodInput = False
-            print ("Don't use laguage like that")
+            print ("Don't use language like that")
         elif word.lower() not in Places:
             goodInput = False
             print("Sorry, I don't know that one.")
@@ -153,7 +244,7 @@ def getColor(prompt, debug = False):
         goodInput = True
         if isSwear(word, debug):
             goodInput = False
-            print ("Don't use laguage like that")
+            print ("Don't use language like that")
         elif word.lower() not in colors:
             goodInput = False
             print("Sorry, I don't know that one.")
@@ -176,7 +267,7 @@ def getSport(prompt, debug = False):
         goodInput = True
         if isSwear(word, debug):
             goodInput = False
-            print ("Don't use laguage like that")
+            print ("Don't use language like that")
         elif word.lower() not in sports:
             goodInput = False
             print("Sorry, I don't know that one.")
@@ -194,7 +285,7 @@ def getfamilymember(promt, debug = False):
         goodInput = True
         if isSwear(word, debug):
             goodInput = False
-            print ("Don't use laguage like that")
+            print ("Don't use language like that")
             
     return word
     
@@ -209,7 +300,7 @@ def getnameoffamilymember(promt, debug = False):
         goodInput = True
         if isSwear(word, debug):
             goodInput = False
-            print ("Don't use laguage like that")
+            print ("Don't use language like that")
             
     return word
     
@@ -224,7 +315,7 @@ def getpetspeicesname(promt, debug = False):
         goodInput = True
         if isSwear(word, debug):
             goodInput = False
-            print ("Don't use laguage like that")
+            print ("Don't use language like that")
             
     return word
     
@@ -239,7 +330,7 @@ def getObject(promt, debug = False):
         goodInput = True
         if isSwear(word, debug):
             goodInput = False
-            print ("Don't use laguage like that")
+            print ("Don't use language like that")
             
     return word
     
@@ -255,7 +346,7 @@ def getpetname(promt, debug = False):
         goodInput = True
         if isSwear(word, debug):
             goodInput = False
-            print ("Don't use laguage like that")
+            print ("Don't use language like that")
             
     return word
     
@@ -275,7 +366,7 @@ def getNumbertime(promt, debug = False):
                  "9",
                  "10",
                  "12",
-            ]
+                     ]
     
     while not goodInput:
         word = input(prompt)
@@ -283,7 +374,7 @@ def getNumbertime(promt, debug = False):
         goodInput = True
         if isSwear(word, debug):
             goodInput = False
-            print ("Don't use laguage like that")
+            print ("Don't use language like that")
         elif word.lower() not in numberTime:
             goodInput = False
             print("Sorry, I don't know that one.")
@@ -309,7 +400,7 @@ def getTimeofday(prompt, debug = False):
         goodInput = True
         if isSwear(word, debug):
             goodInput = False
-            print ("Don't use laguage like that")
+            print ("Don't use language like that")
         elif word.lower() not in Timeofday:
             goodInput = False
             print("Sorry, I don't know that one.")
