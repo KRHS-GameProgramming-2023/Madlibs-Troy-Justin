@@ -59,6 +59,33 @@ def getSeason(prompt, debug = False):
             
     return word
     
+def getFish(prompt, debug = False):
+    if debug: print ("getFish Function")
+
+    goodInput = False
+    
+    Fish = ["trout",
+              "bass", 
+              "pike",
+              "pickrel",
+              "sturgeon",
+              "tarpon",
+              "perch",
+              "sunfish"]
+    
+    while not goodInput:
+        word = input(prompt)
+        
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use language like that")
+        elif word.lower() not in Fish:
+            goodInput = False
+            print("Sorry, I don't know that one.")
+            
+    return word
+    
 def getPet(prompt, debug = False):
     if debug: print ("getPet Function")
 
@@ -67,7 +94,7 @@ def getPet(prompt, debug = False):
     Pets =   ["dog",
               "cat", 
               "pig",
-              "chickem",
+              "chicken",
               "cow",
               "alligator",
               "lizard"]
@@ -80,6 +107,58 @@ def getPet(prompt, debug = False):
             goodInput = False
             print ("Don't use language like that")
         elif word.lower() not in Pets:
+            goodInput = False
+            print("Sorry, I don't know that one.")
+            
+    return word
+
+def getGenre(prompt, debug = False):
+    if debug: print ("getGenre Function")
+
+    goodInput = False
+    
+    genres =   ["rap",
+              "soul", 
+              "pop",
+              "R&B",
+              "hip hop",
+              "rock",
+              "alternative",
+              "edm",
+              "indie"]
+    
+    while not goodInput:
+        word = input(prompt)
+        
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use language like that")
+        elif word.lower() not in genres:
+            goodInput = False
+            print("Sorry, I don't know that one.")
+            
+    return word
+
+def getHoliday(prompt, debug = False):
+    if debug: print ("getHoliday Function")
+
+    goodInput = False
+    
+    holidays =  ["christmas",
+              "thanksgiving", 
+              "easter",
+              "independance day",
+              "halloween"]
+    
+    while not goodInput:
+        word = input(prompt)
+        
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use language like that")
+        elif word.lower() not in holidays:
             goodInput = False
             print("Sorry, I don't know that one.")
             
@@ -274,14 +353,14 @@ def getSport(prompt, debug = False):
             
     return word
     
-def getfamilymember(promt, debug = False):
+def getfamilymember(prompt, debug = False):
     if debug: print ("getfamilymember Function")
 
     goodInput = False
     
     
     while not goodInput:
-        word = input(promt)
+        word = input(prompt)
         goodInput = True
         if isSwear(word, debug):
             goodInput = False
@@ -289,14 +368,14 @@ def getfamilymember(promt, debug = False):
             
     return word
     
-def getnameoffamilymember(promt, debug = False):
+def getnameoffamilymember(prompt, debug = False):
     if debug: print ("getnameoffamilymember Function")
 
     goodInput = False
     
     
     while not goodInput:
-        word = input(promt)
+        word = input(prompt)
         goodInput = True
         if isSwear(word, debug):
             goodInput = False
@@ -304,14 +383,14 @@ def getnameoffamilymember(promt, debug = False):
             
     return word
     
-def getpetspeicesname(promt, debug = False):
+def getpetspeicesname(prompt, debug = False):
     if debug: print ("getpetspeicesname Function")
 
     goodInput = False
     
     
     while not goodInput:
-        word = input(promt)
+        word = input(prompt)
         goodInput = True
         if isSwear(word, debug):
             goodInput = False
@@ -319,14 +398,14 @@ def getpetspeicesname(promt, debug = False):
             
     return word
     
-def getObject(promt, debug = False):
+def getObject(prompt, debug = False):
     if debug: print ("getObject Function")
 
     goodInput = False
     
     
     while not goodInput:
-        word = input(promt)
+        word = input(prompt)
         goodInput = True
         if isSwear(word, debug):
             goodInput = False
@@ -335,14 +414,14 @@ def getObject(promt, debug = False):
     return word
     
     
-def getpetname(promt, debug = False):
+def getpetname(prompt, debug = False):
     if debug: print ("getpetname Function")
 
     goodInput = False
     
     
     while not goodInput:
-        word = input(promt)
+        word = input(prompt)
         goodInput = True
         if isSwear(word, debug):
             goodInput = False
@@ -350,7 +429,7 @@ def getpetname(promt, debug = False):
             
     return word
     
-def getNumbertime(promt, debug = False):
+def getNumbertime(prompt, debug = False):
     if debug: print ("getNumbertime Function")
 
     goodInput = False
