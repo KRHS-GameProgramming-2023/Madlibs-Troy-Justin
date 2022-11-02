@@ -12,19 +12,16 @@ def Story3(debug = False):
     holiday1 = getHoliday("Enter a holiday: ", debug)
     familymember1 = getfamilymember("Enter a family honerific like Dad or Cousin: ", debug)
     Fish1 = getFish("Enter a fish species: ", debug)
-    
+    animal1 = getanimal("Enter an animal: ", debug)
     
     
     out = "\n"
-    out += " It was a beautiful " + season1
-    out += " day,"
-    out += " my friend " + friendName1
-    out += " and I were taking a walk in the park with our pet " + pet1
-    out += " he was " + age1 
-    out += " years old and loved walks"
+    out += " It was a beautiful " + season1 + " day,"
+    out += " my friend " + friendName1 + " and I were taking a walk in the park with our pet " + pet1
+    out += " he was " + age1 + " years old and loved walks"
     out += " each time we took a walk we listened to our favorite " + genre1 + " music "
     out += "my favorite holiday " + holiday1 + " was coming up and I was super excited about it" 
     out += " each year my " + familymember1 + " and I go fishing for " + Fish1
-    
+    out += " this year we even saw a " + animal1 + " crossing the river "
     
     return out
