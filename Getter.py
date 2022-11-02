@@ -403,8 +403,7 @@ def getnumber(prompt, debug = False):
             
     return word
     
-def getfamilymember(promt, debug = False):
->>>>>>> origin/master
+def getfamilymember(prompt, debug = False):
     if debug: print ("getfamilymember Function")
 
     goodInput = False
