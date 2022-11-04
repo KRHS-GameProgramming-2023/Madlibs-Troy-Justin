@@ -15,7 +15,7 @@ def Story2(debug = False):
     object1 = getObject ("Please Enter name of object: ", debug)
     number1 = getnumber ("Enter number between 1 and 24: ", debug)
     heorshe1 = getHeorshe ("Enter pets gender: ", debug)
-    
+    petname2 = getPetname2 ("Enter Name for New pet: ", debug)
     
     
     out = "\n"
@@ -28,9 +28,9 @@ def Story2(debug = False):
     out += " I hung up the phone and just stared at a " + object1 + ", " 
     out += friendName1 + " came over and gently shook me."
     out += " The " + number1 + " weeks after the funeral was held," 
-    out += " I ended up getting another pet named " + petname1 + " "
-    out += heorshe1 + " is a " + petspeicesname1 + " ."
-    out += " My new pet will never fill the viod the other one left but it cures the lonlyness " + heorshe1 + " to worry about."
+    out += " I ended up getting another pet named " + petname2 + " who is a "
+    out += heorshe1 + " " + petspeicesname1 + " ."
+    out += " My new pet will never fill the viod the other one left but it cures the lonlyness. "
 
     
     return out
