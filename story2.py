@@ -19,14 +19,17 @@ def Story2(debug = False):
     
     
     out = "\n"
-    out += "We were out playing " + sport1
+    out += " We were out playing " + sport1
     out += " One day, my friend " + friendName1 + " and I! " 
     out += " It was around " + numbertime1 + " in the " + timeofday1 + " when something tragic happened. "
     out += " We, or I should say I, got a call from my " + familymember1 + " " + nameoffamilymember1 + "."
-    out += " Letting me know my " + petspeicesname1 + " " + petname1 + " had just pasted away..."
-    out += " I hung up the phone and just stared at a " + object1 + " " + friendName1 + " came over and gently shook me."
-    out += " The " + number1 + "weeks after the funeral was held," 
-    out += " I ended up getting another pet named " + petname1 + " " + heorshe1 + " is a " + petspeicesname1 + " ."
+    out += " Letting me know my " + petspeicesname1 + " " 
+    out += petname1 + " had just pasted away..."
+    out += " I hung up the phone and just stared at a " + object1 + ", " 
+    out += friendName1 + " came over and gently shook me."
+    out += " The " + number1 + " weeks after the funeral was held," 
+    out += " I ended up getting another pet named " + petname1 + " "
+    out += heorshe1 + " is a " + petspeicesname1 + " ."
     out += " My new pet will never fill the viod the other one left but it cures the lonlyness " + heorshe1 + " to worry about."
 
     
