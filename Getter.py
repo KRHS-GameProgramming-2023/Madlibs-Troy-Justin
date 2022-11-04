@@ -324,6 +324,29 @@ def getnumber(prompt, debug = False):
             
     return word
     
+def getHeorshe(prompt, debug = False):
+    if debug: print ("getHeorshe Function")
+   
+    goodInput = False
+   
+    Heorshe = ["male",
+              "female"]
+   
+    while not goodInput:
+        word = input(prompt)
+        
+        goodInput = True
+        if isSwear(word, debug):
+            goodInput = False
+            print ("Don't use laguage like that")
+        elif word.lower() not in Heorshe:
+            goodInput = False
+            print("Sorry, I don't know that one.")
+            
+    return word
+    
+    
+    
 def getfamilymember(promt, debug = False):
     if debug: print ("getfamilymember Function")
 
@@ -419,7 +442,7 @@ def getNumbertime(promt, debug = False):
                      ]
     
     while not goodInput:
-        word = input(prompt)
+        word = input(promt)
         
         goodInput = True
         if isSwear(word, debug):
@@ -531,9 +554,6 @@ def getState(prompt, debug = False):
             print("Sorry, I don't know that one.")
         return word
             
-    
-    
-
     
     
 def isSwear(word, debug = False):
