@@ -30,7 +30,15 @@ def Madlibs (debug = False):
             print (Story3())
             print("\n")
             input ("Press Enter to Continue")
+        elif choice == "gp":
+            print ("i like game programming too")
+            print("\n")
+            input ("Press Enter to Continue")
     
+        elif choice == "word":
+            print ("bird is the word")
+            print("\n")
+            input ("Press Enter to Continue")
     
     
     

@@ -31,6 +31,12 @@ def getMenuOption(debug = False):
             option == "Story three"): 
                 option = "3"
                 goodInput = True 
+        elif (option == "i love game programming" ): 
+                option = "gp"
+                goodInput = True 
+        elif (option == "what is the word" ): 
+                option = "word"
+                goodInput = True 
         else:
             print("Please make a valid choice")
             
@@ -357,7 +363,6 @@ def getSport(prompt, debug = False):
             
     return word
     
-
 
 def getnumber(prompt, debug = False):
     if debug: print ("getnumber Function")
